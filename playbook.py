@@ -14,8 +14,13 @@
 # print(fact(x))
 #
 
-n=int(input())
-d=dict()
-for i in range(1,n+1):
-    d[i]=i*i
-print(d)
+#
+# n=int(input())
+# d=dict()
+# for i in range(1,n+1):
+#     d[i]=i*i
+# print(d)
+
+# lambda function
+double = lambda x : x+2*x-x
+print(double(5))
