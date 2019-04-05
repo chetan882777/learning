@@ -34,7 +34,21 @@ class Aircraft:
     def model(self):
         return self._model
 
+    def seating_plan(self):
+        return (range(1,self._num_rows+1),
+                "ABCDEFGHJK"[:self._num_seats_per_row])
+
 if __name__== '__main__':
-    f=Flight("SN309")
-    print("Flight Number - ",f.number())
-    print("Airline Number - ",f.airline())
+
+    # f=Flight("SN309")
+    # print("Flight Number - ",f.number())
+    # print("Airline Number - ",f.airline())
+
+    a= Aircraft("G-EUPT","Airbus A319",22,num_seats_per_row=6)
+    print(a.registration())
+    print(a.model())
+    print(a.seating_plan())
+
+    # a=Aircraft('3349AA','AAA39',20,10)
+    # print(a.registration())
+    # print(a.model())
