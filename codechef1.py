@@ -28,4 +28,4 @@ for _ in range(int(input())):
             percent = ((count['P'] + proxy_needed) * 100) / days
 
             final += 1
-    if final<:print(final)
+    # if final<print(final)
